@@ -7,3 +7,4 @@ x = 4;
 y = 7;
 console.log(y + x);
 console.log(x * y);
+console.log(x + y);
