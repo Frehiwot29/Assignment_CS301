@@ -1,0 +1,16 @@
+   Assignment W1D1 of CS301
+
+1.
+  a. What happens when an assignment is performed without using let or const keywords in
+strict mode?
+
+"use strict";
+x=4;
+y=7;
+console.log(y+x);
+it give x and y is  is not defined 
+
+  b.List 5 reserved keywords in JavaScript.
+  for, let,const ,var,while 
+2.How is a computer program similar/ different than an algorithm.
+
