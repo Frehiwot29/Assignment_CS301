@@ -1,9 +1,9 @@
 // function expration 
-let compute = function (result) {
-    console.log(`Result of the calculation is ${result}`);
+let compute = function (mySum, num1, num2) {
+    return mySum(num1, num2);
 }
-let mySum = function (num1, num2, myCallback) {
-    let add = num1 + num2;
-    myCallback(add);
+let mySum = function (num1, num2) {
+    return num1 + num2;
+
 }
-mySum(2, 3, compute);
+console.log(compute(mySum, 2, 3));

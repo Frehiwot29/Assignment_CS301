@@ -1,12 +1,14 @@
-//callBack function
-function compute(result) {
-    console.log(`Result of the calculation is ${result}`);
+// function 
+function compute(mySum, num1, num2) {
+    return mySum(num1, num2);
+
 }
-function mySum(num1, num2, myCallback) {
-    let add = num1 + num2;
-    myCallback(add);
+function mySum(num1, num2) {
+    return num1 + num2;
+
+
 }
-mySum(2, 3, compute);
+console.log(compute(mySum, 2, 3));
 
 
 

@@ -1,4 +1,8 @@
 //arrow function
-let compute = (result) => console.log(`Result of the calculation is ${result}`);
-let mySum = (num1, num2) => add = num1 + num2;
-console.log(mySum(2, 3, compute));
+let compute = (mySum, num1, num2) => {
+    return mySum(num1, num2);
+}
+let mySum = (num1, num2) => {
+    return num1 + num2;
+}
+console.log(compute(mySum, 2, 3));
