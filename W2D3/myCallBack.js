@@ -1,4 +1,3 @@
-
 // function 
 "use strict";
 /**
@@ -21,6 +20,3 @@ function mySum(num1, num2) {
     return num1 + num2;
 }
 console.log(compute(mySum, 2, 3));
-
-
-

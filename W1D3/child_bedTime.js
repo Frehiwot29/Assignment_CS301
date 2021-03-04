@@ -10,6 +10,7 @@
     13 and older       summer                             10:30 PM
                        winter, spring, fall               9:30 PM
 */
+"use strict";
 const prompt = require("prompt-sync")();
 let age = +prompt("Enter the age of a child: ");
 let season = prompt("Enter the season: ");

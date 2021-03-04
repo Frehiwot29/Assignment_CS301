@@ -1,10 +1,3 @@
-/**
- * Write a function named checkPrime that accepts a parameter and returns true if the argument
-    is a prime number otherwise returns false.
-    a. Now write a program that prompts user to input a number and calls the function
-        checkPrime to see if the entered number is a prime number or not.
- * 
-*/
 "use strict";
 const prompt = require("prompt-sync")();
 /**
@@ -35,4 +28,3 @@ if (isPrime === true) {
 } else {
     console.log("you Entered a number which is not a prime ");
 }
-

@@ -1,4 +1,3 @@
-// function expration 
 "use strict";
 
 let compute = function (mySum, num1, num2) {
