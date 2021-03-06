@@ -145,29 +145,25 @@ console.log(balance(balanced));
  * @param {array} array to check paliondrom
  * @return {boolean} true or false 
 */
-function isPalindrome(array) {
-    let str = String(array);
+const myArry = ["carecar", 1344, 12321, "did", "cannot"];
+const isPalindrome = elll => {
+    const str = String(elll);
     let i = 0;
     let j = str.length - 1;
-    let status;
     while (i < j) {
         if (str[i] === str[j]) {
             i++;
             j--;
-            status = true;
         } else {
-            status = false;
+            return false;
         }
-        return status;
     }
-
-}
-
-// let findPalindrome = (arr) => {
-//     return arr.filter(array => isPalindrome(array));
-// };
-let arr4 = ["carac", 13431, 12321, "did", "madam"];
-console.log(isPalindrome(arr4));
+    return true;
+};
+const findPalindrome = myArry => {
+    return myArry.filter(elll => isPalindrome(elll));
+};
+console.log(findPalindrome(myArry));
 
 /**
  * 
