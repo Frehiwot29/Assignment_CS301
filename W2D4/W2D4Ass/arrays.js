@@ -119,6 +119,98 @@ function tranferToString(arr) {
 let arr2 = ["Quick", "Brown", "Fox"];
 console.log(tranferToString(arr2));
 
+/**
+ * @param {String} balanced to check weather balance or not
+ * @return {boolean} true or false 
+*/
+function balance(balanced) {
+    const newArray = [];
+    for (const element of balanced) {
+        if (element === "(" || element === "[" || element === "{") {
+            balanced.pop(element);
+            newArray.push(element);
+        }
+    }
+    for (let i = 0; i < newArray.length; i++) {
+        if (newArray[i] !== balanced[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+const balanced = ["(", ")", "(", "[", "{", "}", "]", ")"];
+console.log(balance(balanced));
+
+/**
+ * @param {array} array to check paliondrom
+ * @return {boolean} true or false 
+*/
+function isPalindrome(array) {
+    let str = String(array);
+    let i = 0;
+    let j = str.length - 1;
+    let status;
+    while (i < j) {
+        if (str[i] === str[j]) {
+            i++;
+            j--;
+            status = true;
+        } else {
+            status = false;
+        }
+        return status;
+    }
+
+}
+
+// let findPalindrome = (arr) => {
+//     return arr.filter(array => isPalindrome(array));
+// };
+let arr4 = ["carac", 13431, 12321, "did", "madam"];
+console.log(isPalindrome(arr4));
+
+/**
+ * 
+ * @param {Array} matr1 to 
+ * @param {Array} matr2 to
+ * @return {Array} sumMatrics 
+ */
+function matricsAdd(matr1, matr2) {
+    let sumMatrics = [[], []];
+    for (let i = 0; i < matr1.length; i++) {
+        for (let j = 0; j < matr2[i].length; j++) {
+            sumMatrics[i][j] = matr1[j][j] + matr2[i][j];
 
 
-module.exports = { isArrayEqual, addends, getMiddle, rotateRigth, rotateLeft, rotateNRight };
+        }
+
+    }
+    return sumMatrics;
+
+
+}
+let martics1 = [[1, 2, 3], [3, 4, 5]];
+let martics2 = [[2, 4, 5], [4, 5, 6]];
+console.log(matricsAdd(martics1, martics2));
+/**
+ * @param {array} arr to reverse
+ * @return {array} the reversed one
+*/
+function reverse(arr) {
+    let temp = [];
+    let j = 0;
+    for (let i = arr.length - 1; i >= 0; i--) {
+        temp[j] = arr[i];
+        j++;
+    }
+    return temp;
+}
+let input = [1, 2, 3, 4, 5];
+console.log(reverse(input));
+
+
+
+module.exports = {
+    isArrayEqual, addends, getMiddle, rotateRigth,
+    rotateLeft, rotateNRight, balance, isPalindrome, matricsAdd, reverse
+};

@@ -79,7 +79,7 @@ describe("filterRange", function () {
 describe("filterPalindromes", function () {
     it("tests [not, a, kayak, eagle, racecar]", function () {
         assert.strictDeepEqual(
-            arrays.filterPalindromes(["not", "a", "kayak", "eagle", "racecar"]), ["a", "kayak", "racecar"]);
+            arrays.isPalindrome(["not", "a", "kayak", "eagle", "racecar"]), ["a", "kayak", "racecar"]);
     });
 });
 
@@ -87,13 +87,13 @@ describe("filterPalindromes", function () {
 describe("reverse2String", function () {
     it("Fox_Brown_Quick", function () {
         assert.strictEqual(
-            arrays.reverse2String(["Quick", "Brown", "Fox"]),
+            arrays.reverse(["Quick", "Brown", "Fox"]),
             "Fox_Brown_Quick"
         );
     });
 
     it("4_3_2_1", function () {
-        assert.strictEqual(arrays.reverse2String([1, 2, 3, 4]), "4_3_2_1");
+        assert.strictEqual(arrays.reverse([1, 2, 3, 4]), "4_3_2_1");
     });
 });
 
@@ -108,16 +108,16 @@ describe("enhancedIncludes", function () {
 describe("Matrix", function () {
     describe("matrixAddition", function () {
         it("matrix addition of [[0,1,2],[9,8,7]] and [[6,5,4], [3,4,5]]  should be [ [ 6, 6, 6 ], [ 12, 12, 12 ] ]", function () {
-            assert.deepStrictEqual(arrays.matrixAddition(
-                    [
-                        [0, 1, 2],
-                        [9, 8, 7],
-                    ],
-                    [
-                        [6, 5, 4],
-                        [3, 4, 5],
-                    ]
-                ),
+            assert.deepStrictEqual(arrays.matricsAdd(
+                [
+                    [0, 1, 2],
+                    [9, 8, 7],
+                ],
+                [
+                    [6, 5, 4],
+                    [3, 4, 5],
+                ]
+            ),
                 [
                     [6, 6, 6],
                     [12, 12, 12],

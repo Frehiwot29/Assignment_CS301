@@ -1,3 +1,4 @@
+"use strict";
 /**
  *A prime number (or a prime) is a natural number greater than 1 that is not 
     a product of twosmaller natural numbers. 
