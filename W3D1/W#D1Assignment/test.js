@@ -1,5 +1,5 @@
 "use strict";
-
+/*eslint-disable*/
 let car = {};
 car.name = "Toyota",
     car.model = "camry",
@@ -75,12 +75,40 @@ console.log(commonSuffex("swiming", "walking"));
  * @return {String} str 
  */
 function titleCase(str) {
-    let strName = str.split("");
-    for (let i = 0; i < strName.length; i++) {
-        strName[i] = strName[i][0].toUpperCase() + strName[i].substring(i);
+    return str[0].toUpperCase() + str.substr(1, str.length - 1);
+}
+console.log(titleCase("jackson"));
+let arr = [{ name: "abc", age: 20 }, { name: "xyz", age: 10 }];
+/**
+ * 
+ * @param {Array} users to av
+ * @return {number} sum
+ */
+function getAverageAge(users) {
+    let sum = 0;
+    for (let i = 0; i < users.length; i++) {
+        sum += users[i].age;
     }
-    return strName.join(" ");
+    return sum / users.length;
 
 }
-console.log(titleCase("rtt fggh bnn"));
-module.exports = { titleCase, commonSuffex, countProperty, checkSpam };
+console.log(getAverageAge(arr));
+/**
+ * 
+ * @param {number} num1 to
+ * @param {number} num2 to
+ * @return {number} my own
+ */
+function swapFunction(num1, num2) {
+    let temp = num1;
+    num1 = num2;
+    num2 = temp;
+
+    console.log(num1, num2);
+
+}
+let abc = 5;
+let bcd = 7;
+swapFunction(abc, bcd);
+
+module.exports = { titleCase, commonSuffex, countProperty, checkSpam, getAverageAge,swapFunction };

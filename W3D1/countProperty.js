@@ -1,4 +1,5 @@
 "use strict";
+/*eslint-disable*/
 let familyOfKassa = {
     fName: "Adonay",
     lName: "Kassa",

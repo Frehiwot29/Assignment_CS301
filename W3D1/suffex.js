@@ -1,9 +1,10 @@
 "use strict";
+/*eslint-disable*/
 /**
  * 
  * @param {String} str1 to pull over suff
  * @param {String} str2 to pull over suff
- * @return {String} the suffex of the two string
+ * @return {String} the true of the two string
  */
 function commonSuffex(str1, str2) {
     let suffex = "";
@@ -20,4 +21,4 @@ function commonSuffex(str1, str2) {
     }
     return suffex;
 }
-console.log(commonSuffex("swiming", "walking"));
+console.log(commonSuffex("swiming", "waing"));

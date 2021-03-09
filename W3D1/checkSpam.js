@@ -16,4 +16,5 @@ function checkSpam(str) {
 }
 
 console.log(checkSpam("i get a\"prize\"because i won \"lottory\" "));
+console.log(checkSpam("i get a it because i won \"lottory\"it "));
 console.log(checkSpam("i get a it because i won it "));

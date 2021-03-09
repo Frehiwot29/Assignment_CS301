@@ -1,4 +1,5 @@
 "use strict";
+/*eslint-disable*/
 const assert = require("assert");
 const str = require("./test.js");
 
@@ -70,7 +71,7 @@ describe("titleCase", function () {
     const jackson = "jackson";
 
     it("checks for J", function () {
-        assert.strictEqual(str.titleCase("jackson"), "Jj A C K S O N");
+        assert.strictEqual(str.titleCase("jackson"), "Jackson");
     });
 });
 
@@ -96,4 +97,12 @@ describe("first elements", function () {
     it("sum is 9", function () {
         assert.strictEqual(str.sumFirst(arr), 9);
     });
+});
+describe("swap function", function () {
+    const num1 = 5;
+    const num2 = 7;
+    it("swap 5,7 to 7,5", function () {
+        assert.strictEqual(str.swapFunction(num1, num2), 7, 5);
+    })
+
 });
