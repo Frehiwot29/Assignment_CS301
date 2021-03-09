@@ -1,10 +1,9 @@
 "use strict";
-
 let car = {};
-car.name = "Toyota",
+car.make = "Toyota",
     car.model = "camry",
     console.log(car);
 car.model = "Rav4";
 console.log(car.model);
-delete car.name;
+delete car.make;
 console.log(car);
