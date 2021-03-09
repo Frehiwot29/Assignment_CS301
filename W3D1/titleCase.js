@@ -12,4 +12,4 @@ function titleCase(str) {
     return strName.join(" ");
 
 }
-console.log(titleCase("rtt fggh bnn"));
+console.log(titleCase("jackson"));

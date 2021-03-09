@@ -70,7 +70,7 @@ describe("titleCase", function () {
     const jackson = "jackson";
 
     it("checks for J", function () {
-        assert.strictEqual(str.titleCase("jackson"), "Jackson");
+        assert.strictEqual(str.titleCase("jackson"), "Jj A C K S O N");
     });
 });
 
