@@ -1,6 +1,7 @@
 "use strict";
 /**
- * Write a function, isArrayEqual, that returns true if two arrays have === elements, else returns false.
+ * Write a function, isArrayEqual, that returns true if two arrays have === elements, 
+ * else returns false.
  * @param {array} arr1 to check weather equal 
  * @param {array} arr2 to check weather they are equal
  * @return {boolean} checking weather true or false

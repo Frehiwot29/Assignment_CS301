@@ -9,6 +9,9 @@ function reverseString(str) {
         return "";
     } else {
         return reverseString(str.substr(1)) + str.charAt(0);
+        /**
+         * return str.length
+        */
     }
 }
 console.log(reverseString("hello"));

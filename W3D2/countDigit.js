@@ -5,7 +5,14 @@
  * @return {number} number digiting
  */
 function countDigit(num) {
-
+/**
+ * num=Math.abs(num)
+ * if(num<=9){
+ * return 1;
+ * }else{
+ *  return 1 + countDigit(Math.floor(num / 10));
+ * }
+ */
     if (num === 0) {
         return 0;
 

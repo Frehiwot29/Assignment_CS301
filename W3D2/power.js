@@ -6,8 +6,8 @@
  * @return {number} number
  */
 function power(base, num) {
-    if (num === 1) {
-        return base;
+    if (num === 0) {
+        return 1;
     } else {
         return base * power(base, num - 1);
     }
